@@ -12,7 +12,7 @@ from tensorflow.keras.callbacks import ReduceLROnPlateau
 interface = NIFTI_interface(pattern="case_00[0-9]*",
                             channels=1, classes=3)
 
-data_path = "../../kits19_no_gz/data"
+data_path = "../../kits19/data"
 # Create the Data I/O object
 data_io = Data_IO(interface, data_path)
 
@@ -61,14 +61,13 @@ print("Initiating Callbacks...")
 
 cb_lr = ReduceLROnPlateau(monitor='loss', factor=0.1, patience=20, verbose=1, mode='min', min_delta=0.0001, cooldown=1,
                           min_lr=0.00001)
-del sample_list[65]
-del sample_list[101]
-del sample_list[42]
-del sample_list[35]
-del sample_list[60]
-del sample_list[74]
-del sample_list[27]
-del sample_list[77]
+del sample_list[133]
+del sample_list[125]
+del sample_list[68]
+del sample_list[37]
+del sample_list[23]
+del sample_list[15]
+
 
 # Create the validation sample ID list
 validation_samples = sample_list[0:120]
