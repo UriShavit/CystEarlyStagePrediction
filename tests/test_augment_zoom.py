@@ -15,7 +15,7 @@
 
 import unittest
 import numpy as np
-from batchgenerators.batchgenerators.augmentations.spatial_transformations import augment_zoom
+from batchgenerators.augmentations.spatial_transformations import augment_zoom
 
 class TestAugmentZoom(unittest.TestCase):
     

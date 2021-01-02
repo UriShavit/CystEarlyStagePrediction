@@ -15,7 +15,7 @@
 
 import unittest
 import numpy as np
-from batchgenerators.batchgenerators.augmentations.color_augmentations import augment_contrast, augment_brightness_additive,\
+from batchgenerators.augmentations.color_augmentations import augment_contrast, augment_brightness_additive,\
     augment_brightness_multiplicative, augment_gamma
 
 

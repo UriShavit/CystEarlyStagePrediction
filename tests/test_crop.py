@@ -15,7 +15,7 @@
 
 import unittest
 import numpy as np
-from batchgenerators.batchgenerators.augmentations.crop_and_pad_augmentations import random_crop, center_crop, pad_nd_image_and_seg, \
+from batchgenerators.augmentations.crop_and_pad_augmentations import random_crop, center_crop, pad_nd_image_and_seg, \
     crop
 
 

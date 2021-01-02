@@ -17,9 +17,9 @@ import unittest2
 import numpy as np
 from skimage import data
 
-from batchgenerators.batchgenerators.dataloading import SingleThreadedAugmenter
-from batchgenerators.tests.DataGenerators import BasicDataLoader
-from batchgenerators.batchgenerators.transforms.spatial_transforms import MirrorTransform
+from batchgenerators.dataloading import SingleThreadedAugmenter
+from DataGenerators import BasicDataLoader
+from batchgenerators.transforms.spatial_transforms import MirrorTransform
 
 
 class TestMirrorAxis(unittest2.TestCase):

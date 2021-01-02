@@ -15,7 +15,7 @@
 
 import unittest
 import numpy as np
-from batchgenerators.batchgenerators.augmentations.crop_and_pad_augmentations import random_crop
+from batchgenerators.augmentations.crop_and_pad_augmentations import random_crop
 
 
 class TestRandomCrop(unittest.TestCase):

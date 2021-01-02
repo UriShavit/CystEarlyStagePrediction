@@ -14,7 +14,7 @@
 
 
 import numpy as np
-from batchgenerators.batchgenerators.dataloading import SlimDataLoaderBase
+from batchgenerators.dataloading import SlimDataLoaderBase
 
 
 class BasicDataLoader(SlimDataLoaderBase):

@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from batchgenerators.batchgenerators.augmentations.resample_augmentations import augment_linear_downsampling_scipy
+from batchgenerators.augmentations.resample_augmentations import augment_linear_downsampling_scipy
 
 
 class TestAugmentResample(unittest.TestCase):

@@ -14,8 +14,8 @@
 import unittest
 from copy import deepcopy
 import numpy as np
-from batchgenerators.batchgenerators.dataloading import DataLoader
-from batchgenerators.batchgenerators.dataloading import MultiThreadedAugmenter
+from batchgenerators.dataloading import DataLoader
+from batchgenerators.dataloading import MultiThreadedAugmenter
 
 
 class DummyDataLoader(DataLoader):

@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from batchgenerators.batchgenerators.augmentations.normalizations import range_normalization, zero_mean_unit_variance_normalization, \
+from batchgenerators.augmentations.normalizations import range_normalization, zero_mean_unit_variance_normalization, \
     mean_std_normalization, cut_off_outliers
 
 

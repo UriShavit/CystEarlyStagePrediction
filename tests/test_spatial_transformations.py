@@ -15,7 +15,7 @@
 import unittest
 import numpy as np
 
-from batchgenerators.batchgenerators.augmentations.spatial_transformations import augment_rot90, augment_resize, augment_transpose_axes
+from batchgenerators.augmentations.spatial_transformations import augment_rot90, augment_resize, augment_transpose_axes
 
 
 class AugmentTransposeAxes(unittest.TestCase):

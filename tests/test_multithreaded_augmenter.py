@@ -17,8 +17,8 @@ import unittest
 from time import sleep
 
 import numpy as np
-from batchgenerators.batchgenerators.dataloading import SlimDataLoaderBase, MultiThreadedAugmenter
-from batchgenerators.batchgenerators.examples.multithreaded_dataloading import DummyDL, DummyDLWithShuffle
+from batchgenerators.dataloading import SlimDataLoaderBase, MultiThreadedAugmenter
+from batchgenerators.examples.multithreaded_dataloading import DummyDL, DummyDLWithShuffle
 from skimage.data import camera, checkerboard, astronaut, binary_blobs, coins
 from skimage.transform import resize
 from copy import deepcopy
@@ -169,7 +169,7 @@ class TestMultiThreadedAugmenter(unittest.TestCase):
             '''dont test if torch is not installed'''
             return
 
-        from batchgenerators.batchgenerators.transforms import MirrorTransform, NumpyToTensor, TransposeAxesTransform, Compose
+        from batchgenerators.transforms import MirrorTransform, NumpyToTensor, TransposeAxesTransform, Compose
 
         tr_transforms = []
         tr_transforms.append(MirrorTransform())
@@ -196,7 +196,7 @@ class TestMultiThreadedAugmenter(unittest.TestCase):
         This just should not crash
         :return:
         '''
-        from batchgenerators.batchgenerators.transforms import MirrorTransform, TransposeAxesTransform, Compose
+        from batchgenerators.transforms import MirrorTransform, TransposeAxesTransform, Compose
 
         tr_transforms = []
         tr_transforms.append(MirrorTransform())
