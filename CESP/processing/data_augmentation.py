@@ -1,9 +1,11 @@
 import numpy as np
-from batchgenerators.batchgenerators.dataloading.single_threaded_augmenter import *
-from batchgenerators.batchgenerators.transforms import Compose
-from batchgenerators.batchgenerators.transforms import MirrorTransform, SpatialTransform
-from batchgenerators.batchgenerators.transforms import ContrastAugmentationTransform, GaussianNoiseTransform
-from batchgenerators.batchgenerators.transforms import BrightnessMultiplicativeTransform, GammaTransform
+
+from batchgenerators.dataloading.single_threaded_augmenter import *
+
+from batchgenerators.transforms import Compose
+from batchgenerators.transforms import MirrorTransform, SpatialTransform
+from batchgenerators.transforms import ContrastAugmentationTransform, GaussianNoiseTransform
+from batchgenerators.transforms import BrightnessMultiplicativeTransform, GammaTransform
 
 
 class Data_Augmentation:
